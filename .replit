@@ -3,7 +3,7 @@ modules = ["python-3.11"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["zip"]
+packages = ["streamlit", "zip"]
 
 [unitTest]
 language = "python3"
@@ -18,3 +18,7 @@ deploymentTarget = "cloudrun"
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[[ports]]
+localPort = 8501
+externalPort = 3000
